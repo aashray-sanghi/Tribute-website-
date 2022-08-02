@@ -2,32 +2,59 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Chester Bennington Tribute</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./style.css">
+  <title>CodePen - Linkin Park Tribute</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="container-fluid parallax bg-img1">
+<!--<head>
+....
+</head> -->
+
+
+
+
+
+  <div class="container-fluid parallax bg-img1" id="top"> <!--Big Pic container-->
   <div class="heading text-center">
     <h1 class="text-uppercase">Chester Bennington</h1>
   </div>
 </div>
 
-<div class="container-fluid py-5 bg-faded" id="hm">
-  <div class="container">
-    <div class="row py-3 pt-1">
-      <div class="col-sm-12">
-        <img src="https://media.newyorker.com/photos/59712008097a6b51ed4d3bb0/master/w_2560%2Cc_limit/Petrusich-Chester-Bennington.jpg" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 250px" alt="Chester Bennington">
+<div class ="container-fluid ">
+<!-- -->
+  <div class="row"> 
+    <div class="col-lg-2" style ="padding:0" id="sidebar">
+      <div class="container-flex sticky-top">
+        <nav class="vh-100 bg-light">
+          <div class ="flex-column p-3">
+    <div class="flex-column navbar-nav py-5">
+      
+        <a class="nav-link" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#history">History</a>
+        <a class="nav-link" href="#LP">Linkin Park</a>
+        <a class="nav-link" href="#struggles">Struggles</a>
       </div>
     </div>
-    <div class="row py-3">
+    </nav>
+      </div>    
+  </div>
+
+
+<!--parent container of nav bar-->
+ <!--Nav bar container-->
+    <div class="col-lg-10" style =" padding:0">
+      <div class="container py-5 bg-faded" id="history"> <!--Info container-->
+ <!-- <div class="container"> -->
+    <!--<div class="row py-3 pt-1">-->
+      <!--<div class="col-sm-12">-->
+        <img src="https://media.newyorker.com/photos/59712008097a6b51ed4d3bb0/master/w_2560%2Cc_limit/Petrusich-Chester-Bennington.jpg" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 250px" alt="Chester Bennington">
+       <div class="row py-3">
       <p class="text-center lead">Chester Charles Bennington (March 20, 1976 – July 20, 2017) was an American singer, best known as the lead vocalist of rock band Linkin Park.Bennington first gained prominence as a vocalist following the release of Linkin Park's debut album, Hybrid Theory (2000).</p>
     </div>
-  </div>
-</div>
-<div class="container-fluid parallax bg-img2">
+      </div>
+      <div class="container1-fluid parallax bg-img2">
   <div class="middle">
     <div class="container" style="max-width:650px">
       <blockquote class="text-center">
@@ -39,8 +66,7 @@
      </div>
     </div>
   </div>
-</div>
-  <div class="container-sm bg-faded" id="hm">
+      <div class="container-sm bg-faded" id="LP">
   <div class="container">    
     <div class="row py-3 pb-1">
       <div class="col-sm-12">
@@ -48,10 +74,8 @@
       </div>
     </div>
   </div>
-</div>  
-
-<!-- FILM CARDS -->
-<div class="container pb-3 pt-5">
+</div>
+    <div class="container pb-3 pt-5">
   <!-- ROW 1 -->
   <div class="card-deck">
         <div class="card">
@@ -128,6 +152,19 @@
       <a href="https://www.google.com/search?q=list+of+songs+by+chester+bennington&client=firefox-b-1-d&channel=cus5&sxsrf=ALiCzsaogsaVABxqgqHBPC-cO80UQsrycg%3A1655407607753&ei=94OrYoL1LITCkPIPj-iU0A4&ved=2ahUKEwiM5oGj2rL4AhVdDEQIHefSDZgQ9YYDKAR6BAgEEAs&uact=5&oq=list+of+songs+by+chester+bennington&gs_lcp=Cgdnd3Mtd2l6EAM6BwgAEEcQsAM6CggAEOQCELADGAFKBAhBGABKBAhGGAFQmghYrRdg2RhoAnABeACAAVWIAbMGkgECMTGYAQCgAQHIAQ3AAQHaAQYIARABGAk&sclient=gws-wiz&stick=H4sIAAAAAAAAAGWRT2sTQRjGs7PdEqe2hKhQguCA7CJCutndGk1gKQEtevJQiicJs7vvbsZMZuLObENufgTx1HPPpeDH8At48CDoQRCPXjw6m1akLQy8f34DzzPPNPvfrV_2Ruvnn6-3Ot_sD6efPltfbNw-kKJQL_NRlbGEwytZTttdvP5MaKaX7c3OBr7hz_xeEIwXi_A23vQLPwim_Wk-iY6C1o_fx1bnI8JnCK9xpvSdRuPd3jZ6iECEzWajZW03yNrwPZpoPVdD32dCg9BdTpOdVJbznULKgoPpZ_7bCkoGam9hHKg5TSF-DjTzNC1iJrIq1UwKr1IwljwbK6BlOol1WYHHqShiEN3DA49l8Tlxo9FK0lQ33Dcnr8qEcn5V1ZB5Kd9Aqk13xGDRZRpmbrRflxeZGz3dDQZBFA0G4a4b9i_ursDjqPckGDwyW00TM48E5UvFlFdLVOrCiJczrqGEbHxp3XmN72FH1dH_i8xZPcGkhkxqTeLguxjJ_Jza_6llqENQTZPlNWobukXQED2wbp449-svITInKyGSLEk6AWXskASEYKLQUvwFObIVcRcCAAA&ictx=1" target="_blank" class="btn btn-dark ">More songs of Chester Bennington</a>
     </div>
   </div>
+</div>
+</div>
+    </div>
+  </div> <!-- container end main -->
+ 
+
+
+
+
+
+
+<!-- FILM CARDS -->
+
 </div>
 <!-- partial -->
   
